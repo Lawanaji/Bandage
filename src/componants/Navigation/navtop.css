@@ -1,0 +1,23 @@
+.navtop{
+    width: 100%;
+    height: 40px;
+    background-color: #23856D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.topIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 10px;
+}
