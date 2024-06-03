@@ -7,7 +7,7 @@ import Products from '../Products/Products'
 const Home = () => {
   return (
    <>
-   
+   <div className='home'>
    <div className='home-section'>
      <div className='frame1'>
         <p>5 Items</p>
@@ -31,7 +31,9 @@ const Home = () => {
         <button>Read More</button>
      </div>
     </div>
-     <Products />
+    
+   </div>
+   <Products />
    </>
   
   )
