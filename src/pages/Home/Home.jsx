@@ -4,6 +4,7 @@ import frame2 from '../../assets/frame2.svg'
 import frame3 from '../../assets/frame3.svg'
 import frame4 from '../../assets/frame4.svg'
 import Products from '../Products/Products'
+import FeatureProduct from '../Products/FeatureProduct'
 const Home = () => {
   return (
    <>
@@ -34,6 +35,7 @@ const Home = () => {
     
    </div>
    <Products />
+   <FeatureProduct />
    </>
   
   )

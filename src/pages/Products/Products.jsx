@@ -31,7 +31,7 @@ const Products = () => {
       <div className='card-container'>
         {
           products.length > 0 ? (
-            products.slice(0, showAll ? products.length : 12).map((value, index) => (
+            products.slice(0, showAll ? products.length : 10).map((value, index) => (
               <div key={index}>
                 <ProductItem {...value} />
               </div>
