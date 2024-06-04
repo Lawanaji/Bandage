@@ -121,8 +121,20 @@ body{
   align-items: center;
   position: relative;
   text-align: center;
-  letter-spacing: 5px;
+ 
   top: 50rem;
+}
+
+.feature-product-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 50px;
+  
+}
+.items-product-feature{
+  width: 250px;
 }
 .footer{
   width: 100%;
@@ -156,6 +168,9 @@ body{
   .frame1,.frame2, .frame3, .frame4{
     width: 90%;
     padding: 30px;
+  }
+  .feature-product-2{
+    display: grid;
   }
  
 }

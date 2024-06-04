@@ -37,7 +37,7 @@ const Products = () => {
               </div>
             ))
           ) : (
-            <h1>product is Loading...</h1>
+            <h1></h1>
           )
         }
       </div>
