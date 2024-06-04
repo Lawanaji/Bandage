@@ -6,8 +6,8 @@ const ProductItem = (props) => {
      <div className='card'>
      <img src={props.images[0]} className='Image-top' alt="" />
        <h2>{props.title}</h2>
-       <p>{props.discription}</p>
-       <p>{props.price}| $6.48 </p>
+       <p>{props.category}</p>
+       <span className='price'>   <p>${props.price}</p> <strong>${props.discountPercentage}</strong></span>
      </div>
     </div>
   )

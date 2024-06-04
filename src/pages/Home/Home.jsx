@@ -4,10 +4,11 @@ import frame2 from '../../assets/frame2.svg'
 import frame3 from '../../assets/frame3.svg'
 import frame4 from '../../assets/frame4.svg'
 import Products from '../Products/Products'
+import FeatureProduct from '../Products/FeatureProduct'
 const Home = () => {
   return (
    <>
-   
+   <div className='home'>
    <div className='home-section'>
      <div className='frame1'>
         <p>5 Items</p>
@@ -31,7 +32,10 @@ const Home = () => {
         <button>Read More</button>
      </div>
     </div>
-     <Products />
+    
+   </div>
+   <Products />
+   <FeatureProduct />
    </>
   
   )

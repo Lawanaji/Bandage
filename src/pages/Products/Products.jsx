@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ProductItem from './ProductItem'
+import './product.css'
 import axios from 'axios';
 
 const Products = () => {
@@ -23,26 +24,26 @@ const Products = () => {
   }
 
   return (
-    <div className='product-section'>
+    <div className='product-section-container'>
       <p>Featured Product</p>
       <h1>BEST SELLER PRODUCTS</h1>
       <p>Problems trying to resolve the conflict between </p>
-      <div className='card-details'>
+      <div className='card-container'>
         {
           products.length > 0 ? (
-            products.slice(0, showAll ? products.length : 5).map((value, index) => (
+            products.slice(0, showAll ? products.length : 10).map((value, index) => (
               <div key={index}>
                 <ProductItem {...value} />
               </div>
             ))
           ) : (
-            <h1>product is Loading...</h1>
+            <h1></h1>
           )
         }
       </div>
       {
         !showAll && (
-          <button onClick={handleShowAll}>Show All</button>
+          <button onClick={handleShowAll} className='load-more-product'>LOAD MORE PRODUCTS</button>
         )
       }
     </div>
